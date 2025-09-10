@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import './App.css'
+import DarkModeToggle from './darkmode_toggle.jsx'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -8,8 +9,13 @@ function App() {
     <div className="App">
       <div className="container">
         <header className="header">
-          <h1>Welcome to React!</h1>
-          <p>A simple React application built with Vite</p>
+          <div className="header-content">
+            <div className="header-text">
+              <h1>Welcome to React!</h1>
+              <p>A simple React application built with Vite</p>
+            </div>
+            <DarkModeToggle />
+          </div>
         </header>
         
         <main className="main">
